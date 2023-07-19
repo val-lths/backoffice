@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.--root-- {
+  --color1: #F7F0BA;
+  --color2: #E0DBA4;
+  --color3: #A9CBA6;
+  --color4: #7EBEA3;
+  --color5: #53A08E;
+}
+
+body {
+  width: auto;
+  height: auto;
+  padding: 3vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9e9e9;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+
+}
+
+nav {
+  background-color: #53a08e;
+  color: white;
+  width: auto;
+  height: 15vh;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 7vh;
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+a img{
+  width: 15vh;
+  
+}
+nav .a1:hover{
+filter: invert(100%);
+  transform: scale(1.2) rotate(-25deg);
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: black;
+}
+
+.a2:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-top: 3px;
+}
+
+.box {
+  margin-top: 8rem;
+  border-radius: 5vh;
+  width: auto;
+  height: 65vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  display: none;
+  align-items: center;
+
+}
+
+
+.txt {
+  padding-left: 5vh;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+
+form {
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: 45vh;
+}
+
+img{
+  width: 100%;
+  height: 5%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.btn {
+  border-radius: 5vh;
+  border: solid #53a08e .3vh;
+  background-color: #A9CBA6;
+  width: 20vh;
+  height: 7vh;
+  transition: ease 3s color;
+}
+.btn:hover {
+  border-radius: 5vh;
+  width: 20vh;
+  height: 7vh;
+  border: solid #F7F0BA .5vh;
+  background-color: #A9CBA6;
+  cursor: pointer;
+}
+
+input {
+  width: 60vh;
+  height: 5vh;
+  margin-bottom: .3vh;
+
+}
+
+a:link,
+a:visited {
+  color: #fff;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #000;
+}
+
+
+@media screen and (max-width: 1070px) {
+  .box {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .txt {
+    font-size: small;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

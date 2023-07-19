@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <title>BackOffice</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href class="a1"="./img/logo tellosa.png"><img src="./img/logo tellosa.png" alt=""></a>
+      <ul>
+        <li><a class="a2" href="#">Agregar linea</a></li>
+        <li><a class="a2" href="m">Modificar linea</a></li>
+        <li><a class="a2" href="#">Eliminar linea</a></li>
+        <li><a class="a2" href="#">Gestionar destinos y rutas</a></li>
+        <li><a class="a2" href="#">Gestionar reservas </a></li>
+        <li><a class="a2" href="#">Gestionar precios por km</a></li>
+        <li><a class="a2" href="#">Estadisticas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="box">
+    <div class="txt">
+      <p>Agregar Linea:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="Origen" required>
+      <input type="text" placeholder="Destino" required>
+      <input type="text" placeholder="KM en ciudad" required>
+      <input type="text" placeholder="KM en ruta" required>
+      <input type="date" required>
+    <div class="btn ">
+      <input type="submit" class="btn" value="Agregar">
+  </form>
+  </div>
+</div>
+  </div>
+  
+  <div class="box ">
+    <div class="txt">
+      <p>Modificar Linea:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="Lineas a Modificar" required>
+      <input type="text" placeholder="Origen" required>
+      <input type="text" placeholder="Destino" required>
+      <input type="text" placeholder="KM en ciudad" required>
+      <input type="text" placeholder="KM en ruta" required>
+    <div class="btn">
+      <input type="submit" class="btn" value="Modificar">
+    </form>
+    </div>
+  </div>
+  <div class="box  ">
+    <div class="txt">
+      <p>Eliminar Linea:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="Lineas Eliminar">
+    <div class="btn">
+      <input type="submit" class="btn" value="Eliminar">
+  </div>
+  </form>
+</div>
+  <div class="box ">
+    <div class="txt">
+      <p>Gestionar destinos y mas:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="Lineas a Gestionar" required>
+      <input type="text" placeholder="Cantidad de paradas" required>
+      <input type="text" placeholder="Distancia entre paradas en ciudad" required>
+      <input type="text" placeholder="Distancia entre paradas en ruta" required>
+    <div class="btn">
+      <input type="submit" class="btn" value="Gestionar">
+    </div>
+    </form>
+  </div>
+  <div class="box ">
+    <div class="txt">
+      <p>Gestionar reservas de pasajes:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="Reserva a gestionar" required>
+      <input type="text" placeholder="Cancelar reserva" required>
+      <input type="text" placeholder="Reprogramar reserva" required>
+      <input type="text" placeholder="Nuevo horario" required>
+    <div class="btn">
+      <input type="submit" class="btn" value="Gestionar">
+    </div>
+    </form>
+  </div>
+  <div class="box gestionarr2 ">
+    <div class="txt">
+      <p>Gestionar Precios por KM:</p>
+    </div>
+    <form method="POST">
+      <input type="text" placeholder="$ por KM en ciudad" required>
+      <input type="text" placeholder="$ por KM en ruta" required>
+    <div class="btn">
+      <input type="submit" class="btn" value="Gestionar">
+    </div>
+    </form>
+  </div>
+  <div class="box ">
+    <p>Estadisticas: </p>
+    <p>Ventas:</p>
+    <p>Pasajeros totales del mes:</p>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
